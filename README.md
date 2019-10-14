@@ -21,7 +21,7 @@ Hipoteze:
 * Ali so novejša oz. adaptirana stanovanja stanovanja dražja?
 * Ali se cena povečuje z velikostjo?
 * Katera regija ima največ stanovanj?
-
+* Ali so stanovanja, ki jih oddajajo agencije dražje, katere agencije imajo najdražja stanovanja? 
 
 
 
