@@ -8,6 +8,7 @@ Za vsako stanovanje bom zajela:
 * regijo
 * mesto (upravna enota)
 * tip stanovanja
+* ceno
 * leto izgradnje
 * leto adaptacije
 * velikost
