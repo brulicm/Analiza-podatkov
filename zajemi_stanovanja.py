@@ -21,7 +21,7 @@ vzorec_bloka2 = re.compile(
 # regularni izrazi za podatke iz oglasa
 vzorec_stanovanja = re.compile(
     r'id="o(?P<id>\d{7})".*?'
-    r'content="(?P<url>https://www.nepremicnine.net/oglasi-oddaja/(?P<ime>[\w\-]+)_\d{7}/)" />.*?'
+    r'content="(?P<url>https://www.nepremicnine.net/oglasi-oddaja/[\w\-]+_\d{7}/)" />.*?'
     r'<div class="kratek" itemprop="description">(?P<opis>[^\n]*)</div>.*?' #vse razen /n
     r'<span class="velikost" lang="sl">(?P<velikost>\d*,?\d*) m2</span><br />.*?'
     r'<span class="cena">(?P<cena>.*?)\s*?&euro;.*?',
@@ -71,7 +71,6 @@ def izloci_podatke_stanovanja(blok):
         stanovanje = ujemanje.groupdict()
 
         stanovanje['id'] = int(stanovanje['id'])
-        stanovanje['ime'] = str(stanovanje['ime'])
         stanovanje['url'] = stanovanje['url']
         stanovanje['opis'] = str(stanovanje['opis']).replace('&quot;', '')
         stanovanje['velikost'] = float(stanovanje['velikost'].replace(',', '.'))
@@ -164,7 +163,7 @@ for st_strani in range(1, 32):
 # csv datoteka
 orodja.zapisi_csv(
     stanovanja,
-    ['id', 'ime','regija', 'mesto','velikost','cena','tip','leto','adaptirano','nadstropje','agencija','opis','url'],
+    ['id','regija', 'mesto','velikost','cena','tip','leto','adaptirano','nadstropje','agencija','opis','url'],
     'podatki/stanovanja.csv'
 )
 

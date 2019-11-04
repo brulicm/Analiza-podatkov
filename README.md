@@ -2,19 +2,18 @@
 Pri projektni nalogi bom analizirala stanovanja, ki se oddajajo v Sloveniji. 
 Podatke bom pridobila na spletni strani [nepremicnine.net](www.nepremicnine.net).
 
-Za vsako stanovanje bom zajela:
+Zajeti podatki:
 
-* id stanovanja
-* regijo
-* mesto (upravna enota)
-* tip stanovanja
-* ceno
-* leto izgradnje
+* id 
+* url
+* kratek opis 
+* velikost 
+* cena
+* agencija
 * leto adaptacije
-* velikost
-* nadstropje 
-* kratek opis stanovanja
-* agencijo
+* leto izgradnje
+* regija
+* mesto
 
 Hipoteze:
 * Katera regija ima najdražja oz. najcenejša stanovanja?
@@ -25,4 +24,4 @@ Hipoteze:
 * Ali so stanovanja, ki jih oddajajo agencije dražje, katere agencije imajo najdražja stanovanja? 
 
 #
-CSV datoteka z zajetimi podatki se nahaja v mapi `podatki`. Podatke sem pridobila s pomočjo python datotek `zajemi_stanovanja.py` in `orodja.py`. V mapi `spletne-strani` se nahajajo html datoteke.
+CSV datoteka z zgoraj navedenimi zajetimi podatki se nahaja v mapi `podatki`. Podatke sem pridobila s pomočjo python datotek `zajemi_stanovanja.py` in `orodja.py`. V mapi `spletne-strani` se nahajajo html datoteke.
