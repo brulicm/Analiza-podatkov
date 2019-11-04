@@ -3,19 +3,6 @@ import requests
 import re
 import orodja
 
-# URL glavne strani z nepremičninami
-# https://www.nepremicnine.net/oglasi-oddaja/slovenija/stanovanje/
-
-# mapa, v katero bomo shranili zajete strani
-# 'zajeti-podatki'
-
-# mapa, v katero bomo shranili podatke
-# 'obdelani-podatki'
-
-# ime CSV datoteke v katero bomo shranili podatke
-# 'stanovanja.csv'
-
-# shranjene spletne strani dne 28.10.2019
 
 # regularni izraz, ki poišče vse bloke na strani z več oglasi
 vzorec_bloka = re.compile(
