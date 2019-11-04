@@ -171,7 +171,7 @@ def stanovanje_na_strani(st_strani):
 # spletni strani in slovar s podatki oglasa doda v seznam stanovanja
 stanovanja = []
 for st_strani in range(1, 32):
-    for stanovanje in stanovanja_na_strani(st_strani):
+    for stanovanje in stanovanje_na_strani(st_strani):
         stanovanja.append(stanovanje)
 
 # csv datoteka
