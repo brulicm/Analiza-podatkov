@@ -127,7 +127,7 @@ def izloci_podatke2(blok2):
 # funkcija, ki iz zajete strani oglasa, izloči podatke
 # na teh blokih uporabi funkcijo izloci_podatke 2
 def dodatni_podatki_na_strani(url, id):
-    ime_datoteke =f"zajeti-podatki/{id}.html"
+    ime_datoteke =f"spletne-strani/{id}.html"
     orodja.shrani_spletno_stran(url, ime_datoteke)
     vsebina = orodja.vsebina_datoteke(ime_datoteke)
     for blok in vzorec_bloka2.finditer(vsebina):
@@ -142,7 +142,7 @@ def stanovanje_na_strani(st_strani):
         "oglasi-oddaja/slovenija/"
         f"stanovanje/{st_strani}/"
         )
-    ime_datoteke = f"zajeti-podatki/stanovanja-{st_strani}.html"
+    ime_datoteke = f"spletne-strani/stanovanja-{st_strani}.html"
     orodja.shrani_spletno_stran(url, ime_datoteke)
     vsebina = orodja.vsebina_datoteke(ime_datoteke)
 
@@ -165,8 +165,8 @@ for st_strani in range(1, 32):
 orodja.zapisi_csv(
     stanovanja,
     ['id', 'ime','regija', 'mesto','velikost','cena','tip','leto','adaptirano','nadstropje','agencija','opis','url'],
-    'obdelani-podatki/stanovanja.csv'
+    'podatki/stanovanja.csv'
 )
 
 # json datoteka
-orodja.zapisi_json(stanovanja, 'obdelani-podatki/stanovanja.json')
+orodja.zapisi_json(stanovanja, 'podatki/stanovanja.json')

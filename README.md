@@ -24,6 +24,5 @@ Hipoteze:
 * Katera regija ima največ stanovanj?
 * Ali so stanovanja, ki jih oddajajo agencije dražje, katere agencije imajo najdražja stanovanja? 
 
-
-
-
+#
+CSV datoteka z zajetimi podatki se nahaja v mapi `podatki`. Podatke sem pridobila s pomočjo python datotek `zajemi_stanovanja.py` in `orodja.py`. V mapi `spletne-strani` se nahajajo html datoteke.
