@@ -16,12 +16,10 @@ Zajeti podatki:
 * mesto
 
 Hipoteze:
-* Katera regija ima najdražja oz. najcenejša stanovanja?
-* Katero mesto ima najdražja oz. najcenejša stanovanja?
-* Ali so novejša oz. adaptirana stanovanja stanovanja dražja?
-* Ali se cena povečuje z velikostjo?
-* Katera regija ima največ stanovanj?
-* Ali so stanovanja, ki jih oddajajo agencije dražje, katere agencije imajo najdražja stanovanja? 
+* Kje so najdražja oz. najcenejša stanovanja
+* Kako stara so stanovanja in kdaj so bila adaptirana
+* Kje so najstarejša oz. najnovejša stanovanja
+* Kako se višina mesečne najemnine spreminja v odvisnosti od kraja, velikosti, starosti in tipa
+* Ali so stanovanja, ki jih oddajajo agencije dražja, katere so najdražje agencije
 
-#
 CSV datoteka z zgoraj navedenimi zajetimi podatki se nahaja v mapi `podatki`. Podatke sem pridobila s pomočjo python datotek `zajemi_stanovanja.py` in `orodja.py`. V mapi `spletne-strani` se nahajajo html datoteke.
